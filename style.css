@@ -1,0 +1,276 @@
+/* 
+Theme Name: Hello Elementor
+Theme URI: https://github.com/elementor/hello-theme/
+Description: Hello Elementor Child is a child theme of Hello Elementor, created by Elementor team
+Author: Elementor Team
+Author URI: https://elementor.com/
+Template: hello-elementor
+Version: 1.0.1
+Text Domain: hello-elementor-child
+License: GNU General Public License v3 or later.
+License URI: https://www.gnu.org/licenses/gpl-3.0.html
+Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, featured-images, rtl-language-support, threaded-comments, translation-ready
+*/
+
+/*
+Add your custom styles here
+*/
+
+
+/* custom animation */
+/* 
+*{
+-webkit-transition: all 0.15s ease-out;
+-moz-transition: all 0.15s ease-out;
+-o-transition: all 0.15s ease-out;
+transition: all 0.15s ease-out;
+}
+ */
+
+@-webkit-keyframes fadeInUp {
+0% {
+opacity: 0;
+-webkit-transform: translateY(20px);
+transform: translateY(20px);
+}
+
+100% {
+opacity: 1;
+-webkit-transform: translateY(0);
+transform: translateY(0);
+}
+}
+
+@keyframes fadeInUp {
+0% {
+opacity: 0;
+-webkit-transform: translateY(20px);
+-ms-transform: translateY(20px);
+transform: translateY(20px);
+}
+
+100% {
+opacity: 1;
+-webkit-transform: translateY(0);
+-ms-transform: translateY(0);
+transform: translateY(0);
+}
+}
+
+.fadeInUp {
+-webkit-animation-name: fadeInUp;
+animation-name: fadeInUp;
+}
+
+
+/* HEADING STYLES */
+h1 em, h2 em, h3 em{
+font-style: normal!important;
+background: url(embg.png);
+background-size: auto;
+background-repeat: repeat-x;
+background-position: bottom;
+padding: 0px 0px 3px;
+}
+
+.by-industry h1 em, .by-industry h2 em, .by-industry h3 em{
+background: url(embg-industry.png);
+background-size: auto;
+background-repeat: repeat-x;
+background-position: bottom;
+padding: 0px 0px 3px;
+}
+
+.by-role h1 em, .by-role h2 em, .by-role h3 em{
+background: url(embg-role.png);
+background-size: auto;
+background-repeat: repeat-x;
+background-position: bottom;
+padding: 0px 0px 3px;
+}
+
+.by-goal h1 em, .by-goal h2 em, .by-goal h3 em{
+background: url(embg-goal.png);
+background-size: auto;
+background-repeat: repeat-x;
+background-position: bottom;
+padding: 0px 0px 3px;
+}
+
+/* COMPARISON STYLES */
+.custom-tab .elementor-widget-container .elementor-tabs>.elementor-tabs-wrapper .elementor-tab-title.elementor-active:before{
+content: url('icon-check.svg');	
+}
+
+/* LIST STYLES */
+ul.checklist li:before{
+content: url('circle-check.svg');
+margin-right: 8px;
+}
+
+/*  PAGES  */
+/* about */
+.lt-role {
+font-family: 'Inter', Sans-Serif;
+font-style: normal;
+font-weight: normal;
+font-size: 18px;
+line-height: 32px;
+color: #525C66;
+}
+.learn-more-card,
+.learn-more-heading {
+min-height: 243px;
+}
+.learn-more-card:hover .white,
+.learn-more-card:hover .white h4 {
+color: #fff !important;
+}
+.elementor-105 .elementor-element.elementor-element-2032392.elementor-column > .elementor-widget-wrap {
+justify-content: end;
+}
+section#lt_carousel_container1 {
+width: 1338px;
+}
+#tpca_carousel_leadership .slick-nav {
+top: -120px;
+background: transparent;
+border-radius: 50px;
+padding: 0;
+border: 1px solid #000;
+width: 45px;
+height: 45px;
+}
+
+#tpca_mobile_carousel_leadership .slick-nav {
+top: -90px;
+background: transparent;
+border-radius: 50px;
+padding: 0;
+border: 1px solid #000;
+width: 45px;
+height: 45px;
+}
+#tpca_carousel_leadership .slick-prev {
+transform: translateY(-50%) translateX(-20%);
+margin-left: -45px;
+right: 325px;
+}
+#tpca_mobile_carousel_leadership .slick-prev {
+transform: translateY(-50%) translateX(-20%);
+margin-left: -45px;
+right: 225px;
+}
+#tpca_carousel_leadership .slick-next {
+transform: translateY(-50%) translateX(20%);
+margin-left: 0;
+right: 265px;
+}
+#tpca_mobile_carousel_leadership .slick-next {
+transform: translateY(-50%) translateX(20%);
+margin-left: 0;
+right: 165px;
+}
+#tpca_carousel_leadership .slick-next:before,
+#tpca_mobile_carousel_leadership .slick-next:before {
+content: "";
+background-image: url(/wp-content/uploads/2021/07/icon-next.svg);
+background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
+}
+#tpca_carousel_leadership .slick-prev:before,
+#tpca_mobile_carousel_leadership .slick-prev:before {
+content: "";
+background-image: url(/wp-content/uploads/2021/07/icon-prev.svg);
+background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
+}
+/* #lt_carousel .jet-carousel__item.slick-slide {
+    width: 350px !important;
+} */
+
+#tpca_carousel_testimonial .slick-nav {
+bottom: 60px;
+background: transparent;
+border-radius: 50px;
+padding: 0;
+border: 1px solid #000;
+width: 45px;
+height: 45px;
+}
+#tpca_carousel_testimonial .slick-prev {
+transform: translateY(-50%) translateX(-20%);
+margin-left: -45px;
+}
+#tpca_carousel_testimonial .slick-next {
+transform: translateY(-50%) translateX(20%);
+margin-left: 0;
+}
+
+#tpca_carousel_testimonial .slick-next:before {
+content: "";
+background-image: url(/wp-content/uploads/2021/07/icon-next.svg);
+background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
+}
+#tpca_carousel_testimonial .slick-prev:before {
+content: "";
+background-image: url(/wp-content/uploads/2021/07/icon-prev.svg);
+background-size: auto;
+background-repeat: no-repeat;
+background-position: center;
+}
+#tpca_carousel_leadership .plus-carousel-inner::before {
+background: #f4f6f8;
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=1 );
+display: block;
+content: "";
+height: 100%;
+position: absolute;
+width: 52px;
+z-index: 9;
+top: 0;
+left: -1px;
+}
+#tpca_carousel_leadership .plus-carousel-inner {
+margin-left: -64px;
+}
+
+/* MEDIA QUERIES */
+/* tab */
+@media only screen and (max-device-width: 1024px) {
+#tpca_mobile_carousel_leadership .slick-prev {
+right: 78px;
+}
+#tpca_mobile_carousel_leadership .slick-next {
+right: 30px;
+}
+#tpca_carousel_testimonial .slick-nav {
+bottom: 30px;
+}
+}
+/* mobile */
+@media only screen and (max-device-width: 767px) {
+#tpca_mobile_carousel_leadership .slick-prev {
+left: 50px;
+}
+#tpca_mobile_carousel_leadership .slick-next {
+right: auto;
+left: 40px;
+}
+.learn-more-heading {
+min-height: 116px;
+}
+#tpca_mobile_carousel_leadership .slick-nav {
+top: -43px;
+}
+#tpca_carousel_testimonial .slick-nav {
+bottom: 0;
+}
+#tpca_carousel_testimonial .plus-carousel-inner {
+height: 550px;
+}
+}
